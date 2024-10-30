@@ -1,0 +1,14 @@
+.signUpForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  @media (min-width: 768px) {
+      width: 400px;
+  }
+
+  .btn {
+    margin-top: 20px;
+  }
+}

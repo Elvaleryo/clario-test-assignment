@@ -1,0 +1,105 @@
+.customInputWrap {
+  width: 100%;
+  .inputWrap {
+    position: relative;
+    width: 100%;
+
+    .customInput {
+      width: 100%;
+      padding: 14.5px 20px;
+      border: 1px solid transparent;
+      outline: none;
+      border-radius: 10px;
+      background-color: #fff;
+      font-size: 16px;
+      transition: .2s;
+      color: #4A4E71;
+
+      &::placeholder {
+        color: #6F91BC;
+        transition: .2s;
+      }
+
+      &:focus {
+        border-color: #6F91BC;
+        color: #4A4E71;
+        outline: none;
+        &::placeholder {
+          color: #4A4E71;
+        }
+      }
+
+      &:disabled {
+        border-color: rgba(21, 29, 81, 0.2);
+        background-color: rgba(21, 29, 81, 0.1);
+      }
+
+      &.password {
+        padding-right: 50px;
+      }
+    }
+
+    &.inputValid {
+      .customInput {
+        border-color: #27B274;
+        color: #27B274;
+      }
+      .passwordIconWrap {
+        .passwordIcon {
+          fill: #27B274;
+        }
+      }
+    }
+    &.inputError {
+      .customInput {
+        border-color: #FF8080;
+        color: #FF8080;
+        background-color: #FDEFEE;
+        &::placeholder {
+          color: #FF8080;
+        }
+        &:focus {
+          color: #FF8080;
+          &::placeholder {
+            color: #FF8080;
+          }
+        }
+      }
+      .passwordIconWrap {
+        .passwordIcon {
+          fill: #FF8080;
+        }
+      }
+    }
+
+    .passwordIconWrap {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      .passwordIcon {
+        fill: #6F91BC;
+      }
+    }
+  }
+
+  .errorsWrap {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .error {
+    color: #FF8080;
+  }
+  .valid {
+    color: rgba(39, 178, 116, 0.7);
+  }
+
+  .errorMessage {
+    margin: 8px 20px;
+  }
+}

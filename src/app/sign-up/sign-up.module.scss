@@ -1,0 +1,16 @@
+.signUpPage {
+  background: url('/icons/bg-stars.svg') center 57px/58% no-repeat, linear-gradient(167.96deg, #F4F9FF 0%, #E0EDFB 100%);
+  min-height: 100vh;
+  height: 100%;
+  padding: 138px 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 768px) {
+    background: url('/icons/bg-stars.svg') center 57px/270px no-repeat, linear-gradient(167.96deg, #F4F9FF 0%, #E0EDFB 100%);
+  }
+
+  .title {
+    padding-bottom: 40px;
+  }
+}
